@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Dashboard from "../views/dashboard/Dashboard";
+import SignInSide from "./views/Login/SignIn.js";
 
 export default function Routing() {
   return (
@@ -18,8 +19,8 @@ export default function Routing() {
         <hr />
 
         <Switch>
-          <Route exact path="/">
-            <Home />
+          <Route exact path="/signin">
+            <SignInSide />
           </Route>
           <Route path="/dashboard">
             <Dashboard />
